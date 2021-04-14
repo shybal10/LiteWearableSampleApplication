@@ -1,5 +1,14 @@
-<div class="container">
-    <text class="title">
-        Hi {{title}}
+<div class="parent" style="flex-direction: column">
+    <div class="counterContainer" style="flex-direction: row">
+    <input type="button" class="counterbtn" value="-" onclick="decrement"/>
+    <text class="counterText" style="align-items: center;">
+         {{timer}}
     </text>
+    <input type="button" class="counterbtn" value="+" onclick="increment"/>
+    </div>
+    <div class="multiplierContainer" style="flex-direction: row;">
+        <input type="button" class="multiplierbtn" value="1x" onclick="oneMultiple"/>
+        <input type="button" class="multiplierbtn" value="5x" onclick="fiveMultiples"/>
+        <input type="button" class="multiplierbtn" value="10x" onclick="tenMultiples"/>
+    </div>
 </div>
